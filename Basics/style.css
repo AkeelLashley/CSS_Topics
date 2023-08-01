@@ -1,0 +1,155 @@
+/* CSS Comments */
+/* This is a CSS comment */
+
+/* w */
+
+/* Element Selector */
+
+body {
+  /* Background Image */
+  /* background-color: lightblue; */
+  background-image: url("/images/background.jpeg");
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+
+  
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+
+/* Class Selector */
+
+.hello-world {
+
+
+}
+
+
+
+.class-selector {
+  color: green;
+}
+
+/* ID Selector */
+#id-selector {
+  color: purple;
+}
+
+#goodday {
+
+}
+
+/* Universal Selector (CSS Reset) */
+
+/* margin: 0; removes any default margins that browsers add. The margin property defines the space around an element outside of any defined borders.
+
+padding: 0; removes any default padding. The padding property defines the space between the element content and its border.
+
+box-sizing: border-box; changes how the width and height of elements are calculated. When you set an element's width and height properties with box-sizing: border-box;, those properties include the content, padding, and border, but not the margin. This makes it much easier to size elements. */
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* CSS Reset Continue... */
+/* font: inherit; makes these elements inherit the font settings from their parent element. This can be helpful for ensuring consistency in your design, because browsers may otherwise apply different default fonts to these types of elements. */
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* Grouping Selectors */
+h1,
+h2,
+h3 {
+  background-color: aliceblue;
+}
+
+/* Predefined Color Name */
+.predefined-color {
+  color: blue;
+}
+
+/* RGB Color */
+.rgb-color {
+  color: rgb(255, 0, 0);
+}
+
+/* CSS Units */
+/* Em is relative to the parent element's font size, while rem is relative to the root element's font size. Em cascades down the DOM tree, inheriting and adjusting sizes; rem is consistent, fixed to root font size. */
+.css-units {
+  width: 50%;
+  height: 50vh;
+  /* font-size: 1rem;
+  font-size: 1em; */
+}
+
+/* CSS Fonts */
+.font-family-example {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* CSS Borders */
+.border-example {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* CSS Outline */
+.outline-example {
+  outline: 2px dashed red;
+}
+
+/* CSS Margins */
+.margin-example {
+  border: 2px solid black;
+  /* top, right, bottom, left */
+  margin: 20px 0px;
+}
+
+/* CSS Padding */
+.padding-example {
+  border: 2px solid black;
+  padding: 20px;
+}
+
+/* CSS Height and Width */
+.height-width-example {
+  border: 2px solid black;
+  height: 200px;
+  width: 20%;
+}
+
+/* CSS Box Model */
+.box-model-example {
+  margin: 10px;
+  border: 12px solid black;
+  padding: 20px;
+  width: 200px;
+}
+
+/* CSS Text */
+.text-example {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+  /* setting a line height of 1.5 helps with read ablity */
+  line-height: 1.5;
+
+  /* this is to bold the text 300-400 is the default*/
+  font-weight: 900;
+
+  /* oblique is just a stronger italic */
+  font-style: italic;
+}
+
+/* Background Images (Check Body)*/

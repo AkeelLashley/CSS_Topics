@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 2px solid pink;
+  /* Apply Flex to the container around the items using flexbox */
+  display: flex;
+  /* to move all of the content from the left to right or center */
+  /* justify-content: space-evenly; center, flex-start, space-around, space-between, space-evenly */
+  /* adds a 16px gap between each item  */
+  gap: 1rem;
+  /* aligns items in the start, center or end of the container vertically */
+  /* align-items: center; */
+
+  /* changes the items to a column, it is set to row by default */
+
+  /* makes teh content resize and change shape based on user screen (overflow)*/
+  flex-wrap: wrap;
+  /* short form for flex-direction and flex-wrap */
+  /* flex-flow: row wrap; */
+
+  /* to align the rows */
+  align-content: space-evenly;
+}
+
+.box:first-child {
+  flex: 1;
+}
+
+.box:nth-child(even){
+  background-color: white;
+}
+
+.box:not(:first-child):hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.box {
+  min-width: 100px;
+  /* remove min height to make them shorter */
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem; /* 1rem = 16px */
+  padding: 0.5rem;
+
+  /* makes each item a flex container (each box number centers in the box) */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
