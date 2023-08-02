@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font: 1rem 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas: 
+    "logo logo header header header header header header header"
+    "home home home home home home home asd asd"
+    "ft ft ft ft ft ft ft ft ft"
+    ;
+}
+
+.container {
+    grid-area: home;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+
+
+.box {
+    background-color: #000;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+}
+
+.box:first-child {
+    display: flex ;
+    /* grid-column-start: 1;
+    grid-column-end:5 ; */
+    grid-column: 1/5;
+    align-content: center;
+        justify-content: center;
+    
+    /* background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    align-content: center;
+    justify-content: center; */
+}
+
+.box:nth-child(4) {
+        grid-column-start: 3;
+        grid-column-end: span 3;
+}
+
+
+.box:nth-child(6) {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+}
+
+.aside {
+    grid-area: asd;
+    background-color: blueviolet;
+}
+.logo {
+    grid-area: logo;
+    background-color: black;
+    color: white ;
+}
+.header {
+    grid-area: header;
+    background-color: blue;
+}
+.footer {
+    grid-area: ft;
+    background-color: cornflowerblue;
+}
+
+
+
+
+
+/* body {
+    font: 1rem 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd"
+    "sb1 sb1 mn mn mn mn mn sb2 sb2"
+    "ct ct ct ct ct ct ct ct ct"
+    "ft ft ft ft ft ft ft ft ft"
+    ;
+    gap: 0.5rem;
+
+}
+
+
+
+.header {
+    grid-area: hd;
+    background-color: aqua;
+}
+
+.aside1 {
+    grid-area: sb1;
+    background-color: crimson;
+}
+.aside2 {
+    grid-area: sb2 ;
+    background-color: blue;
+}
+
+.contact {
+    grid-area: ct;
+    background-color: bisque;
+}
+
+.footer {
+    grid-area: ft;
+    background-color: brown;
+}
+
+
+.container {
+    grid-area: mn;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+
+}
+.box {
+    background-color: #000;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+}
+
+.box:first-child {
+    display: grid;
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    align-content: center;
+    justify-content: center;
+}
+
+.box:nth-child(4) {
+    /* grid-column-start: 3;
+    grid-column-end: 5; */
+    grid-column: 3/5 ;
+    background-color: cadetblue;
+}
+ */
